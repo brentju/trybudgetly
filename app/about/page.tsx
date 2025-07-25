@@ -29,22 +29,10 @@ export default function About() {
 
   const team = [
     {
-      name: 'Alex Chen',
-      role: 'Co-Founder & CEO',
-      bio: 'Former fintech executive with 10+ years building consumer financial products.',
-      initials: 'AC'
-    },
-    {
-      name: 'Sarah Williams',
-      role: 'Co-Founder & CTO',
-      bio: 'AI researcher and full-stack engineer passionate about democratizing financial technology.',
-      initials: 'SW'
-    },
-    {
-      name: 'Marcus Johnson',
-      role: 'Head of Product',
-      bio: 'Product leader focused on creating intuitive experiences for complex financial workflows.',
-      initials: 'MJ'
+      name: 'Brent Ju',
+      role: 'Founder & CEO',
+      bio: 'Stanford graduate with experience at Google and Amazon, passionate about democratizing financial technology through AI-powered solutions.',
+      initials: 'BJ'
     }
   ]
 
@@ -145,36 +133,38 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Founder Section */}
       <section className="section-padding">
         <div className="container-padding">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Team
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">
+              Meet the Founder
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're a diverse group of engineers, designers, and financial experts 
-              united by a passion for making finance accessible to everyone.
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+              Budgetly was founded with a mission to make sophisticated financial tools 
+              accessible to everyone, regardless of their financial background.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {team.map((member, index) => (
-              <div key={index} className="card p-6 text-center">
-                <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">{member.initials}</span>
+          <div className="flex justify-center">
+            <div className="w-full max-w-sm sm:max-w-md md:max-w-lg">
+              {team.map((member, index) => (
+                <div key={index} className="card p-6 sm:p-8 text-center">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                    <span className="text-white font-bold text-xl sm:text-2xl">{member.initials}</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-1 sm:mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-primary-600 font-medium mb-3 sm:mb-4 text-base sm:text-lg">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    {member.bio}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-primary-600 font-medium mb-3">
-                  {member.role}
-                </p>
-                <p className="text-gray-600 text-sm">
-                  {member.bio}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

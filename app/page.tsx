@@ -60,14 +60,14 @@ export default function Home() {
       ]
     },
     {
-      icon: Smartphone,
-      title: 'Mobile-First Design',
-      description: 'Access your financial data anywhere with our responsive, mobile-optimized interface.',
+      icon: Zap,
+      title: 'Instant Setup',
+      description: 'Get started in minutes with automatic account syncing and intelligent budget creation.',
       details: [
-        'Progressive Web App (PWA)',
-        'Offline data access',
-        'Touch-optimized interface',
-        'Cross-platform compatibility'
+        'One-click account connection via Plaid',
+        'AI-generated budget suggestions',
+        'Automatic transaction categorization',
+        'Instant financial health insights'
       ]
     }
   ]
