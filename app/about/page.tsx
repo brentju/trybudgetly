@@ -169,39 +169,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="section-padding bg-gradient-primary">
-        <div className="container-padding">
-          <div className="text-center text-white mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Impact
-            </h2>
-            <p className="text-xl opacity-90">
-              Numbers that reflect our commitment to helping people achieve financial wellness.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center text-white">
-              <div className="text-4xl font-bold mb-2">5,000+</div>
-              <div className="text-lg opacity-90">Active Users</div>
-            </div>
-            <div className="text-center text-white">
-              <div className="text-4xl font-bold mb-2">$2M+</div>
-              <div className="text-lg opacity-90">Money Managed</div>
-            </div>
-            <div className="text-center text-white">
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-lg opacity-90">Accuracy Rate</div>
-            </div>
-            <div className="text-center text-white">
-              <div className="text-4xl font-bold mb-2">4.9/5</div>
-              <div className="text-lg opacity-90">User Rating</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section-padding">
         <div className="container-padding">
